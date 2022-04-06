@@ -1,0 +1,134 @@
+@font-face {
+  font-family: "1";
+  src: url(/assets/Inconsolata-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-family: "1";
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body {
+  background-color: #E5D4DC;
+}
+
+body::-webkit-scrollbar {
+  width: 18px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #CBAECF;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #E5D4DC;
+  border-radius: 20px;
+  border: 5px solid #CBAECF;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #CBAECF;
+  padding: 1.6% 20% 1.6% 8%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav li {
+  margin-left: 22%;
+  cursor: pointer;
+}
+
+nav .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+nav .logo img {
+  top: 0;
+  left: 1.8%;
+  position: absolute;
+  width: 4.5%;
+  -webkit-animation: nuage-move 4s infinite;
+          animation: nuage-move 4s infinite;
+}
+
+@-webkit-keyframes nuage-move {
+  50% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes nuage-move {
+  50% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+.affiche {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  padding: 10% 12% 12% 12%;
+}
+
+.affiche .gauche {
+  padding: 30% 0 30% 15%;
+  background-color: #BC9FBA;
+  height: 12%;
+  margin-top: 10%;
+}
+
+.affiche .gauche h2 {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.affiche .gauche h2:hover {
+  color: white;
+}
+
+.affiche .gauche p {
+  font-size: 1.2rem;
+}
+
+.affiche .droite {
+  background-color: white;
+  display: block;
+  cursor: pointer;
+}
+
+.affiche .droite img {
+  width: 100%;
+}
+/*# sourceMappingURL=index.css.map */

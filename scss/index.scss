@@ -1,0 +1,109 @@
+@font-face {
+    font-family: "1";
+    src: url(/assets/Inconsolata-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: "1";
+    transition: 0.3s;
+}
+
+body{
+    background-color: #E5D4DC;
+}
+
+body::-webkit-scrollbar {
+    width: 18px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #CBAECF;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #E5D4DC;
+    border-radius: 20px;
+    border: 5px solid #CBAECF;
+  }
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #CBAECF;
+    padding: 1.6% 20% 1.6% 8%;
+    position: sticky;
+    top: 0;
+    
+    ul{
+        list-style-type: none;
+        display: flex;
+    }
+    
+    li{
+        margin-left: 22%;
+        cursor: pointer;
+    }
+
+    .logo{
+        display: flex;
+        cursor: pointer;
+
+        img{
+            top: 0;
+            left: 1.8%;
+            position: absolute;
+            width: 4.5%;
+            animation: nuage-move 4s infinite;
+        }
+
+        @keyframes nuage-move {
+            50% {
+                transform: translateY(20px);
+            }
+
+            100%{
+                transform: translateY(0px);
+            }
+        }
+    }
+
+}
+
+.affiche{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 10% 12% 12% 12%;
+
+    .gauche{
+            padding: 30% 0 30% 15%;
+            background-color: #BC9FBA;
+            height: 12%;
+            margin-top: 10%;
+
+        h2{
+            font-size: 2.5rem;
+            cursor: pointer;
+        }
+
+        h2:hover{
+            color: white;
+        }
+
+        p{
+            font-size: 1.2rem;
+        }
+    }
+
+    .droite{
+        background-color: white;
+        display: block;
+        cursor: pointer;
+
+        img{
+            width: 100%;
+        }
+    }
+}
